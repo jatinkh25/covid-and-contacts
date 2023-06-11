@@ -13,7 +13,7 @@ export default function Layout({ children }: LayoutProps) {
           isSidebarOpen ? 'bg-black/50' : 'bg-transparent'
         } ${
           isSidebarOpen ? 'pointer-events-auto' : 'pointer-events-none'
-        }  sm:bg-transparent sm:pointer-events-all`}
+        }  sm:bg-transparent sm:pointer-events-auto`}
       >
         <div
           className={`sm:transition-none transition-transform ${
