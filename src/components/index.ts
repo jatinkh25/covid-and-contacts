@@ -1,0 +1,6 @@
+export { default as Navbar } from './Navbar'
+export { default as Sidebar } from './Sidebar'
+export { default as Layout } from './HOCs/Layout'
+export { default as Error } from './Error'
+export { default as ContactForm } from './ContactsForm'
+export { default as Spinner } from './Spinner'

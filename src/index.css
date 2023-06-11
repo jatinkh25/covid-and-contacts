@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --col-text-liked: #ff449f;
+  --col-text-unliked: #232323;
+  --col-bg-liked: #f6dfeb;
+  --col-bg-unliked: #fdfdfd;
+  --col-border-liked: #e4bad4;
+  --col-border-unliked: #88888840;
+  --col-bg-body: #fdfdfd;
+  --col1: hsl(116, 66%, 67%);
+  --col2: hsl(59, 66%, 67%);
+  --col3: hsl(293, 66%, 67%);
+  --col4: hsl(271, 56%, 56%);
+
+  --shadow: 0px 1px 25px -10px rgba(0, 64, 128, 0.4);
+  --btn-shadow: 0 0 10px -5px rgb(0, 28, 64, 0.4);
+  /* --in-shadow: inset 5px 5px 15px -10px #3340; */
+  --in-shadow: none;
+}
+
+#root {
+  height: 100%;
+}
+
+@media (max-width: 456px) {
+  :root {
+    --shadow: 0px 1px 13px -5px rgba(0, 64, 128, 0.4);
+    --btn-shadow: 0 0 6px -3px rgb(0, 28, 64, 0.4);
+    /* --in-shadow: inset 2.5px 2.5px 8px -5px #3340; */
+    --in-shadow: none;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 7px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background: hsla(0, 0%, 67.1%, 0.5);
+}
+
+body::before {
+  line-height: 0;
+  content: '';
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  opacity: 0.4;
+  background-image: radial-gradient(#02075e 0.8px, transparent 0.8px),
+    radial-gradient(#02075e 0.8px, #fdfdfd 0.8px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+  z-index: -10;
+}
+
+.leaflet-container {
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+}

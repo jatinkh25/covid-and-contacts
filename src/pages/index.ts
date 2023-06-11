@@ -1,0 +1,5 @@
+export { default as ErrorPage } from './ErrorPage'
+export { default as ContactsPage } from './ContactsPage'
+export { default as CreateContactPage } from './CreateContactPage'
+export { default as EditContactPage } from './EditContactPage'
+export { default as CovidDashboard } from './CovidDashboard'
