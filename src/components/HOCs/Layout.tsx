@@ -9,9 +9,9 @@ export default function Layout({ children }: LayoutProps) {
     <>
       <Navbar />
       <div
-        className={`z-10 fixed inset-0 w-full h-full ${
-          isSidebarOpen ? 'bg-black/50' : 'bg-transparent'
-        } ${
+        className={`z-10 fixed inset-0 ${
+          isSidebarOpen ? 'w-full' : 'w-[250px'
+        } sm:w-[250px] h-full ${isSidebarOpen ? 'bg-black/50' : 'bg-transparent'} ${
           isSidebarOpen ? 'pointer-events-auto' : 'pointer-events-none'
         }  sm:bg-transparent sm:pointer-events-auto`}
       >
