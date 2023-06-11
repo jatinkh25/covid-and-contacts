@@ -20,10 +20,10 @@ This is a contact management app built with ReactJS, TypeScript, TailwindCSS, Re
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/College-Placement-Portal-NITH/placement-portal-frontend.git
+$ git clone https://github.com/jatinkh25/covid-and-contacts.git
 
 # Go to the repository folder
-$ cd placement-portal-frontend
+$ cd covid-and-contacts
 
 # Install dependencies
 $ yarn install
